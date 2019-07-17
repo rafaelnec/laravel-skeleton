@@ -1,0 +1,42 @@
+version: '3'
+services:
+
+  #MySQL Service
+  db:
+    image: mariadb
+    restart: unless-stopped
+    ports:
+      - "3309:3309"
+    env_file: ./deploy/mysql/.env
+    volumes:
+      - ./deploy/mysql/my.cnf:/etc/mysql/my.cnf
+    networks:
+      - app-network
+
+  #PHP Service
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: laravel-skeleton
+    depends_on:
+      - db
+    container_name: app
+    restart: unless-stopped
+    tty: true
+    environment:
+      SERVICE_NAME: app
+      SERVICE_TAGS: dev
+    ports:
+      - "9000:80"
+      - "3000:3000"
+    working_dir: /laravel-skeleton
+    volumes:
+      - ./:/laravel-skeleton
+    networks:
+      - app-network
+
+#Docker Networks
+networks:
+  app-network:
+    driver: bridge
