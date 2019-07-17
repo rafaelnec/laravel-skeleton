@@ -52,6 +52,10 @@ The port 3000 run the Npm run watch every change in your code is reflected witho
 ```
 docker ps
 ```
+- Access container:
+```
+docker exec -it *<id_container>* bash
+```
 - Logs: 
 ```
 docker log *<id_container>* -f
