@@ -1,40 +1,40 @@
-# Docker with Laravel + Nginx + MariaDB + NPM
+## Docker with Laravel + Nginx + MariaDB + NPM
 
 This is a skeleton of the Laravel 5.8 + Nginx + MariaDB with Docker.
 
-## Requirements: 
+### Requirements: 
 
 	- Docker [Link](https://docs.docker.com/install/)
 
-## Configuration Files:
+### Configuration Files:
 
-### [Php-fpm]
+#### [Php-fpm]
 
 	- Config: [php-fpm.conf](deploy/php-fpm/conf.d/laravel-skeleton.conf)
 
-### [Php]
+#### [Php]
 
 	- Config: [php.ini](deploy/php/conf.d/local.ini)
 
-### [Nginx] 
+#### [Nginx] 
 
 	- Config Vhost: [app.conf](deploy/nginx/sites-available/app)
 
-### [Mysql]
+#### [Mysql]
 
 	- Config: [my.cnf](deploy/mysql/my.cnf)
 	- Enviroment: [.env](deploy/mysql/.env)
 
-### [Laravel]
+#### [Laravel]
 
 	- Config: [.env](.env)
 
-## Run
+### Run
 
 	- Go to: /path/laravel-skeleton
 	- docker-compose up -d
 
-## Acess Laravel:
+### Acess Laravel:
 
 	Inside the container the Laravel is running with the port 80.
 	For development this project run with Docker-Compose in the ports 9000 and 3000.
