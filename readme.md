@@ -39,7 +39,9 @@ docker-compose up -d
 ### Acess Laravel:
 
 Inside the container the Laravel is running with the port 80.
+
 For development this project run with Docker-Compose in the ports 9000 and 3000.
+
 The port 3000 run the Npm run watch every change in your code is reflected without refresh the browser.
 
 - [http://localhost:9000](http://localhost:9000) To access Laravel
