@@ -4,7 +4,8 @@ This is a skeleton of the Laravel 5.8 + Nginx + MariaDB with Docker.
 
 ### Requirements: 
 
-	- Docker [Link](https://docs.docker.com/install/)
+	- Docker 
+	[Link](https://docs.docker.com/install/)
 
 ### Configuration Files:
 
