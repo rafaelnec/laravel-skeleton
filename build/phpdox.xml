@@ -1,10 +1,10 @@
 <phpdox xmlns="http://xml.phpdox.net/config">
- <project name="laravel" source="../app" workdir="${basedir}/api/xml">
+ <project name="laravel" source="../app" workdir="api/xml">
   <collector publiconly="false">
    <include mask="*.php" />
   </collector>
 
-  <generator output="${basedir}">
+  <generator output="">
    <build engine="html" enabled="true" output="api">
     <file extension="html" />
    </build>
