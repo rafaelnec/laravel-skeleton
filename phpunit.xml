@@ -30,15 +30,5 @@
         <server name="QUEUE_CONNECTION" value="sync"/>
         <server name="SESSION_DRIVER" value="array"/>
     </php>
-    <logging>
-         <log type="coverage-html" target="build/coverage" lowUpperBound="35" highLowerBound="70"/>
-         <log type="coverage-clover" target="build/logs/clover.xml"/>
-         <log type="coverage-php" target="build/logs/coverage.serialized"/>
-         <log type="coverage-text" target="php://stdout" showUncoveredFiles="false"/>
-         <log type="coverage-crap4j" target="build/logs/crap4j.xml"/>
-         <log type="junit" target="build/logs/junit.xml"/>
-         <log type="testdox-html" target="build/logs/testdox.html"/>
-         <log type="testdox-text" target="build/logs/testdox.txt"/>
-    </logging>
 </phpunit>
 
