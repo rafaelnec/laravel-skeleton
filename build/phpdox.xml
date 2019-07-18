@@ -1,5 +1,5 @@
 <phpdox xmlns="http://xml.phpdox.net/config">
- <project name="laravel" source="../app" workdir="build/phpdox">
+ <project name="laravel" source="../app" workdir="phpdox">
   <collector publiconly="false">
    <include mask="*.php" />
   </collector>
